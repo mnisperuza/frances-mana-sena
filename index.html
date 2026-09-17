@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frances y Maná — panadería artesanal."
+    />
+    <title>Frances y Maná | Panadería artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="#inicio" aria-label="Frances y Maná, inicio">
+          <img class="brand__logo" src="assets/frances-y-mana-mark.png" alt="" aria-hidden="true" />
+          <span class="brand__copy">
+            <span class="brand__name">Frances <em>y</em> Maná</span>
+            <span class="brand__tagline">Panadería &amp; pastelería</span>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#especialidades">Especialidades</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a class="header-contact" href="tel:+573232902793" aria-label="Llamar al +57 323 2902793">
+          <span class="header-contact__label">Pedidos y reservas</span>
+          <span>+57 323 2902793</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="site-intro" aria-labelledby="intro-title">
+        <div class="container site-intro__grid">
+          <div class="site-intro__content" data-reveal="left">
+            <p class="eyebrow">Panadería artesanal · Hecho con calma</p>
+            <h1 id="intro-title">El buen pan<br /><em>hace hogar.</em></h1>
+            <p>Recetas honestas, fermentos lentos y el aroma de una mesa compartida. Bienvenidos a Frances y Maná.</p>
+            <a class="button magnetic" href="tel:+573232902793">Haz tu pedido <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <figure class="hero-image" data-reveal="right">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
+              alt="Pan artesanal recién horneado sobre una mesa de madera"
+            />
+            <figcaption>Una pausa que sabe a recién horneado.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="bread-marquee" aria-label="Frases de Frances y Maná">
+        <div class="bread-marquee__track">
+          <span>Fermentos lentos</span><i aria-hidden="true">✦</i><span>Ingredientes locales</span><i aria-hidden="true">✦</i><span>Hecho a mano</span><i aria-hidden="true">✦</i><span>Fermentos lentos</span><i aria-hidden="true">✦</i><span>Ingredientes locales</span><i aria-hidden="true">✦</i><span>Hecho a mano</span><i aria-hidden="true">✦</i>
+        </div>
+      </div>
+
+      <section id="especialidades" class="specialties" aria-labelledby="specialties-title">
+        <div class="container">
+          <div class="section-heading" data-reveal="up">
+            <div>
+              <p class="eyebrow">Del horno a tu mesa</p>
+              <h2 id="specialties-title">Panes y pasteles para compartir.</h2>
+            </div>
+            <p class="section-heading__intro">
+              Cada pieza se prepara en pequeñas tandas, con ingredientes sencillos y el tiempo que necesita para tener buen sabor.
+            </p>
+          </div>
+
+          <div class="specialties__grid" data-stagger>
+            <article class="specialty-card" data-reveal="up" data-tilt>
+              <div class="specialty-card__number">01</div>
+              <h3>Pan campesino</h3>
+              <p>Miga suave, corteza dorada y una fermentación lenta que llena la casa de aroma.</p>
+              <span class="specialty-card__label">Para todos los días</span>
+            </article>
+
+            <article class="specialty-card specialty-card--accent" data-reveal="up" data-tilt>
+              <div class="specialty-card__number">02</div>
+              <h3>Rollos de canela</h3>
+              <p>Masa tierna, canela recién molida y un glaseado ligero para una pausa dulce.</p>
+              <span class="specialty-card__label">Recién horneados</span>
+            </article>
+
+            <article class="specialty-card" data-reveal="up" data-tilt>
+              <div class="specialty-card__number">03</div>
+              <h3>Tarta de temporada</h3>
+              <p>Frutas frescas, crema delicada y una base crujiente que cambia con cada estación.</p>
+              <span class="specialty-card__label">Por encargo</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="process" aria-labelledby="process-title">
+        <div class="container process__layout">
+          <div class="process__intro" data-reveal="left">
+            <p class="eyebrow">Nuestro ritual</p>
+            <h2 id="process-title">El tiempo también es un ingrediente.</h2>
+            <p>Trabajamos con paciencia para que cada bocado tenga una historia que contar.</p>
+            <a class="text-link magnetic" href="#proceso">Mira nuestro proceso <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <ol class="process-list">
+            <li data-reveal="right">
+              <span class="process-list__number">01</span>
+              <div><h3>Mezclamos</h3><p>Harinas seleccionadas, agua, sal y un toque de masa madre.</p></div>
+            </li>
+            <li data-reveal="right">
+              <span class="process-list__number">02</span>
+              <div><h3>Esperamos</h3><p>La fermentación lenta desarrolla aromas profundos y una miga ligera.</p></div>
+            </li>
+            <li data-reveal="right">
+              <span class="process-list__number">03</span>
+              <div><h3>Horneamos</h3><p>Cada pieza entra al horno cuando está lista, nunca antes.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="quote-section" aria-label="Opinión de cliente">
+        <div class="container quote-card" data-reveal="up">
+          <span class="quote-card__mark" aria-hidden="true">“</span>
+          <blockquote>Hay lugares que alimentan el cuerpo. Frances y Maná alimenta también la memoria.</blockquote>
+          <cite>— Valentina R. · Cliente habitual</cite>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact-strip" aria-labelledby="contact-title">
+        <div class="container contact-strip__inner" data-reveal="up">
+          <div>
+            <p class="eyebrow">Estamos para servirte</p>
+            <h2 id="contact-title">Hablemos de tu próximo antojo.</h2>
+          </div>
+          <a class="contact-link magnetic" href="tel:+573232902793">+57 323 2902793 <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="current-year"></span> Frances y Maná.</p>
+        <div class="designer-credit" aria-label="Diseñado por ArteLibre">
+          <span>Diseñado por</span>
+          <img src="assets/ArteLibre-Logo-Reimagined.png" alt="ArteLibre" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
