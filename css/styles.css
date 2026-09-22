@@ -397,7 +397,7 @@ h2 {
 
 .specialties__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -418,6 +418,11 @@ h2 {
   background: var(--color-bread);
   color: var(--color-white);
   border-top-color: var(--color-ink);
+}
+
+.specialty-card--soft {
+  background: color-mix(in srgb, var(--color-rose) 23%, var(--color-cream));
+  border-top-color: var(--color-bread);
 }
 
 .specialty-card__number {
@@ -452,6 +457,46 @@ h2 {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.specialties__note {
+  max-width: 42rem;
+  margin: 2rem auto 0;
+  color: var(--color-sage);
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.neighborhood {
+  padding-block: clamp(4rem, 8vw, 6.5rem);
+  background: var(--color-cream);
+}
+
+.neighborhood__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 1fr);
+  gap: clamp(3rem, 10vw, 8rem);
+  align-items: start;
+}
+
+.neighborhood__list {
+  border-top: 1px solid var(--color-wheat);
+}
+
+.neighborhood__list p {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--color-wheat);
+  font-size: 0.95rem;
+}
+
+.neighborhood__list strong {
+  color: var(--color-bread);
+  font-family: var(--font-display);
 }
 
 .process {
@@ -681,6 +726,11 @@ h2 {
     gap: 3.5rem;
   }
 
+  .neighborhood__layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
   .section-heading {
     align-items: start;
     flex-direction: column;
@@ -689,6 +739,10 @@ h2 {
 
   .specialties__grid {
     grid-template-columns: 1fr;
+  }
+
+  .neighborhood__list p {
+    grid-template-columns: 6.5rem 1fr;
   }
 
   .hero-image {
